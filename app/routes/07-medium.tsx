@@ -33,10 +33,10 @@ export default function Test() {
         </picture>
       </section>
       <section className="flex gap-4 justify-between p-6">
-        <Link className="btn btn-primary" to="/05-small">
+        <Link className="btn btn-primary" to="/06-small">
           prev
         </Link>
-        <Link className="btn btn-primary" to="/07-vite-imagetools">
+        <Link className="btn btn-primary" to="/08-vite-imagetools">
           next
         </Link>
       </section>

@@ -36,10 +36,10 @@ export default function ViteImageTools() {
         </div>
       </div>
       <section className="flex gap-4 justify-between p-6">
-        <Link className="btn btn-primary" to="/06-medium">
+        <Link className="btn btn-primary" to="/07-medium">
           prev
         </Link>
-        <Link className="btn btn-primary" to="/08-vite-imagetools-art">
+        <Link className="btn btn-primary" to="/09-vite-imagetools-art">
           next
         </Link>
       </section>

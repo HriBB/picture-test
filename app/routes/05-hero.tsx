@@ -68,10 +68,10 @@ export default function Test() {
         </picture>
       </section>
       <section className="flex justify-between p-6">
-        <Link className="btn btn-primary" to="/03-sizes">
+        <Link className="btn btn-primary" to="/04-media">
           prev
         </Link>{' '}
-        <Link className="btn btn-primary" to="/05-small">
+        <Link className="btn btn-primary" to="/06-small">
           next
         </Link>
       </section>
