@@ -7,23 +7,27 @@ export default function Specs() {
         <h1 className="text-8xl mb-10 font-bold">
           <a
             className="link"
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
             target="_blank"
             rel="noreferrer"
           >
-            &lt;picture&gt;
+            &lt;img&gt;
           </a>
         </h1>
         <ul className="text-2xl list-disc list-inside pl-5">
           <li className="mb-4">
-            pove brskalniku vse možne formate in velikosti slike
+            mora obstajati v &gt;picture&lt; elementu in deluje kot fallback
           </li>
-          <li className="mb-4">kompleksno!</li>
+          <li className="mb-4">je element, ki se dejansko zrenderira</li>
+          <li className="mb-4">&gt;picture&lt; je kot prazen &gt;div&lt;</li>
+          <li className="mb-4">&gt;source&lt; da brskalniku izbiro</li>
         </ul>
       </section>
       <section className="flex gap-4 justify-between p-6">
-        <div />
-        <Link className="btn btn-primary" to="/00-img">
+        <Link className="btn btn-primary" to="/">
+          prev
+        </Link>
+        <Link className="btn btn-primary" to="/01-source">
           next
         </Link>
       </section>

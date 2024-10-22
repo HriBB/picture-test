@@ -53,7 +53,6 @@ export default defineConfig({
         square: (config) => async (metadatas) => {
           const basePixels = parseInt(config?.[0] || '')
           const usePixels = parseInt(config?.[1] || '') || basePixels
-          //console.log('customOutput', {config,basePixels,usePixels,metadatas})
 
           if (!basePixels) return pictureFormat()(metadatas)
 

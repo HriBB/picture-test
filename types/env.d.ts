@@ -38,6 +38,10 @@ declare module 'vite/client.d.ts' {
     const imageData: OutputMetadata[]
     export default imageData
   }
+  declare module '*&as=picture' {
+    const imageData: Picture
+    export default imageData
+  }
   declare module '*?hero' {
     const imageData: Picture
     export default imageData

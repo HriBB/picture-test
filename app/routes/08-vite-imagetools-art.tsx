@@ -5,6 +5,7 @@ import portraitMd from '~/image/spacenet.jpg?w=600&h=1200&format=avif;webp;jpeg&
 import landscapeSm from '~/image/spacenet.jpg?w=600&h=300&format=avif;webp;jpeg&as=meta'
 import landscapeMd from '~/image/spacenet.jpg?w=1200&h=600&format=avif;webp;jpeg&as=meta'
 import landscapeLg from '~/image/spacenet.jpg?w=1600&h=800&format=avif;webp;jpeg&as=meta'
+import { Link } from '@remix-run/react'
 
 const img = landscapeMd.find((meta) => meta.format === 'jpeg')
 
@@ -63,8 +64,6 @@ landscapeSm.forEach(addSourceDensity('landscape', 1))
 landscapeMd.forEach(addSourceDensity('landscape', 2))
 landscapeLg.forEach(addSourceDensity('landscape', 2.5))
 
-console.log({ sources })
-
 export default function ViteImageTools() {
   return (
     <main>
@@ -100,6 +99,11 @@ export default function ViteImageTools() {
           </picture>
         </div>
       )}
+      <section className="flex gap-4 justify-between p-6">
+        <Link className="btn btn-primary" to="/08-vite-imagetools">
+          prev
+        </Link>
+      </section>
     </main>
   )
 }

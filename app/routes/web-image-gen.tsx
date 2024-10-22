@@ -9,7 +9,6 @@ export default function WebImageGen() {
       <section className="h-svh">
         <picture>
           {Object.entries(pic.formats).map(([type, sizes]) => {
-            console.log(type, sizes)
             const srcSet = Object.entries(sizes)
               .map(([size, path]) => `${path} ${size}w`)
               .join(',')
