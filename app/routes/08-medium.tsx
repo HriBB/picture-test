@@ -17,14 +17,14 @@ export default function Test() {
               srcSet={sizes
                 .map((size) => `/image/spacenet-${size}.${type} ${size}w`)
                 .join(',')}
-              sizes="300px"
+              sizes="600px"
             />
           ))}
           <img
-            className="w-[300px]"
+            className="w-[600px]"
             src="/image/spacenet-1920.jpg"
-            alt="Spacenet close-up small"
-            sizes="300px"
+            alt="Spacenet close-up medium"
+            sizes="600px"
             width={width}
             height={height}
             loading="lazy"
@@ -33,10 +33,10 @@ export default function Test() {
         </picture>
       </section>
       <section className="flex gap-4 justify-between p-6">
-        <Link className="btn btn-primary" to="/05-hero">
+        <Link className="btn btn-primary" to="/07-small">
           prev
         </Link>
-        <Link className="btn btn-primary" to="/07-medium">
+        <Link className="btn btn-primary" to="/09-vite-imagetools">
           next
         </Link>
       </section>

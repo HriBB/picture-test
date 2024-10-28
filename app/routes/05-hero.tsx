@@ -71,7 +71,7 @@ export default function Test() {
         <Link className="btn btn-primary" to="/04-media">
           prev
         </Link>{' '}
-        <Link className="btn btn-primary" to="/06-small">
+        <Link className="btn btn-primary" to="/06-sizes">
           next
         </Link>
       </section>

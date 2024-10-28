@@ -1,11 +1,11 @@
 import { OutputMetadata } from 'types/env'
+import { Link } from '@remix-run/react'
 
 import portraitSm from '~/image/spacenet.jpg?w=300&h=600&format=avif;webp;jpeg&as=meta'
 import portraitMd from '~/image/spacenet.jpg?w=600&h=1200&format=avif;webp;jpeg&as=meta'
 import landscapeSm from '~/image/spacenet.jpg?w=600&h=300&format=avif;webp;jpeg&as=meta'
 import landscapeMd from '~/image/spacenet.jpg?w=1200&h=600&format=avif;webp;jpeg&as=meta'
 import landscapeLg from '~/image/spacenet.jpg?w=1600&h=800&format=avif;webp;jpeg&as=meta'
-import { Link } from '@remix-run/react'
 
 const img = landscapeMd.find((meta) => meta.format === 'jpeg')
 
@@ -67,8 +67,8 @@ landscapeLg.forEach(addSourceDensity('landscape', 2.5))
 export default function ViteImageTools() {
   return (
     <main>
-      <h1 className="absolute top-2 left-2 text-2xl p-2 z-50">
-        vite-imagetools
+      <h1 className="absolute top-2 left-2 text-2xl p-6 z-50 bg-black/80 text-white">
+        vite-imagetools art direction
       </h1>
       {img && (
         <div className="w-full h-svh">
@@ -100,7 +100,7 @@ export default function ViteImageTools() {
         </div>
       )}
       <section className="flex gap-4 justify-between p-6">
-        <Link className="btn btn-primary" to="/08-vite-imagetools">
+        <Link className="btn btn-primary" to="/09-vite-imagetools">
           prev
         </Link>
       </section>

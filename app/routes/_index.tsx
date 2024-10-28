@@ -16,8 +16,8 @@ export default function Specs() {
         </h1>
         <ul className="text-2xl list-disc list-outside pl-10 max-w-xl">
           <li className="mb-10">
-            katere slike so na voljo, v katerih formatih, v katerih velikostih
-            in za katere resolucije
+            katere slike so na voljo: v katerih formatih, v katerih velikostih
+            in za katere resolucije je kakšna velikost
           </li>
           <li className="mb-10">
             art direction in različni formati (avif, webp, jpeg)

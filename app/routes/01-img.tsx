@@ -16,10 +16,10 @@ export default function Specs() {
         </h1>
         <ul className="text-2xl list-disc list-outside pl-10 max-w-xl">
           <li className="mb-10">
-            mora biti prisoten v &lt;picture&gt; elementu
+            zrenderira eno od slik iz &lt;source&gt; elementov (currentSrc)
           </li>
           <li className="mb-10">
-            zrenderira eno od slik iz &lt;source&gt; elementov (currentSrc)
+            mora biti prisoten v &lt;picture&gt; elementu
           </li>
           <li className="mb-10">definira velikost in ostale atributa</li>
           <li className="mb-10">deluje kot fallback</li>

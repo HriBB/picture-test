@@ -15,8 +15,8 @@ export default function Specs() {
           </a>
         </h1>
         <ul className="text-2xl list-disc list-outside pl-10 max-w-xl">
+          <li className="mb-10">katere slike so na voljo</li>
           <li className="mb-10">void element, se ne renderira</li>
-          <li className="mb-10">katere verzije slike so na voljo</li>
           <li className="mb-10">
             za &lt;picture&gt;, &lt;audio&gt; in &lt;video&gt; elemente
           </li>

@@ -22,9 +22,10 @@ export default function Specs() {
             kako velika je zrenderirana slika pri določeni resoluciji
           </li>
           <li className="mb-10">če ne določimo, brskalnik vzame 100vw</li>
-          <li className="mb-10">mobile 100vw, desktop 33%</li>
+          <li className="mb-10">primer: mobile 100vw, desktop 33%</li>
           <li className="mb-10">
-            definira frontend, saj lahko sliko uporabimo na različnih mestih
+            definira frontend, saj lahko sliko uporabimo na različnih mestih v
+            različnih velikostih
           </li>
         </ul>
       </section>

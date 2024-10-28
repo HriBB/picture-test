@@ -8,7 +8,7 @@ const types = ['avif', 'webp', 'jpg']
 export default function Test() {
   return (
     <main>
-      <section className="px-6 py-12 h-[calc(100vh-6rem)]">
+      <section className="md:px-6 md:py-12 h-[calc(100svh-6rem)]">
         <picture>
           {types.map((type) => (
             <source
@@ -17,26 +17,27 @@ export default function Test() {
               srcSet={sizes
                 .map((size) => `/image/spacenet-${size}.${type} ${size}w`)
                 .join(',')}
-              sizes="600px"
+              //sizes="(max-width: 767px) 100vw, 300px"
             />
           ))}
           <img
-            className="w-[600px]"
+            className="w-full md:w-[300px]"
             src="/image/spacenet-1920.jpg"
-            alt="Spacenet close-up medium"
-            sizes="600px"
+            alt="Spacenet close-up small"
+            sizes="(max-width: 767px) 100vw, 300px"
             width={width}
             height={height}
-            loading="lazy"
+            loading="eager"
             decoding="async"
+            fetchPriority="high"
           />
         </picture>
       </section>
       <section className="flex gap-4 justify-between p-6">
-        <Link className="btn btn-primary" to="/06-small">
+        <Link className="btn btn-primary" to="/05-hero">
           prev
         </Link>
-        <Link className="btn btn-primary" to="/08-vite-imagetools">
+        <Link className="btn btn-primary" to="/07-small">
           next
         </Link>
       </section>
